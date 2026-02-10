@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ürünlerimiz | Nova Tasarım</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#e10600}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:#0d0d0d;color:#fff}
+a{text-decoration:none;color:inherit}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;
+  background:rgba(0,0,0,.85);
+  backdrop-filter:blur(10px);
+  padding:14px 20px;
+  display:flex;align-items:center;justify-content:space-between;
+  z-index:1000;
+}
+nav img{height:36px}
+.nav-links{
+  display:flex;
+  gap:20px;
+  flex-wrap:nowrap;
+}
+.nav-links a{font-weight:500;color:#ddd;white-space:nowrap}
+
+/* SECTION */
+section{
+  padding:120px 20px 80px;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* PRODUCTS */
+.products{display:grid;grid-template-columns:1fr;gap:24px}
+.product{
+  padding:28px;
+  border-radius:16px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+}
+.btn{
+  display:inline-block;
+  margin-top:16px;
+  padding:12px 24px;
+  border-radius:30px;
+  background:var(--red);
+  color:#fff;
+  font-weight:500;
+}
+
+/* DESKTOP */
+@media(min-width:900px){
+  nav{padding:0 70px;height:72px}
+  nav img{height:40px}
+  section{padding:140px 80px}
+  .products{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html"><img src="logo.svg" alt="Nova Tasarım"></a>
+  <div class="nav-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="urunler.html">Ürünlerimiz</a>
+  </div>
+</nav>
+
+<section>
+  <h1>Ürünlerimiz</h1>
+  <p style="margin-top:12px;color:#aaa">İhtiyacınıza özel profesyonel çözümler</p>
+
+  <div class="products" style="margin-top:32px">
+    <div class="product">
+      <h3>Animasyonlu Logo</h3>
+      <p>Markanıza hareket kazandırır.</p>
+      <a class="btn" target="_blank"
+         href="https://wa.me/905365613022?text=Fiyat%20Bilgisi%20Alabilir%20Miyim%3F">Teklif Al</a>
+    </div>
+    <div class="product">
+      <h3>Logo Tasarımı</h3>
+      <p>Kurumsal ve modern tasarımlar.</p>
+      <a class="btn" target="_blank"
+         href="https://wa.me/905365613022?text=Fiyat%20Bilgisi%20Alabilir%20Miyim%3F">Teklif Al</a>
+    </div>
+    <div class="product">
+      <h3>Reels Tasarımı</h3>
+      <p>Sosyal medyada fark yaratın.</p>
+      <a class="btn" target="_blank"
+         href="https://wa.me/905365613022?text=Fiyat%20Bilgisi%20Alabilir%20Miyim%3F">Teklif Al</a>
+    </div>
+    <div class="product">
+      <h3>Sosyal Medya Tasarımları</h3>
+      <p>Profesyonel ve tutarlı içerikler.</p>
+      <a class="btn" target="_blank"
+         href="https://wa.me/905365613022?text=Fiyat%20Bilgisi%20Alabilir%20Miyim%3F">Teklif Al</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

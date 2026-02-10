@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Tasarım | Kreatif Ajans</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#e10600;--dark:#0d0d0d;--gray:#b5b5b5}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:var(--dark);color:#fff}
+a{text-decoration:none;color:inherit}
+
+/* NAVBAR */
+nav{
+  position:fixed;top:0;left:0;right:0;
+  background:rgba(0,0,0,.85);
+  backdrop-filter:blur(10px);
+  padding:14px 20px;
+  display:flex;align-items:center;justify-content:space-between;
+  z-index:1000;
+}
+nav img{height:36px}
+.nav-links{
+  display:flex;
+  gap:20px;
+  flex-wrap:nowrap;
+}
+.nav-links a{font-weight:500;color:#ddd;white-space:nowrap}
+
+/* HERO */
+header{
+  min-height:100vh;
+  padding:140px 20px 80px;
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;
+}
+header h1{font-size:38px;font-weight:600}
+header h1 span{color:var(--red)}
+header p{margin-top:16px;color:var(--gray);font-size:16px}
+
+/* SECTIONS */
+section{padding:80px 20px;max-width:1200px;margin:auto}
+.grid{display:grid;grid-template-columns:1fr;gap:24px}
+
+/* CARDS */
+.card{
+  padding:28px;
+  border-radius:16px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+/* FOOTER */
+footer{
+  border-top:1px solid rgba(255,255,255,.08);
+  padding:40px 20px;
+  text-align:center;
+}
+footer img{height:36px;margin-bottom:12px}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+  position:fixed;
+  right:16px;bottom:16px;
+  width:52px;height:52px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;
+}
+
+/* DESKTOP */
+@media(min-width:900px){
+  nav{padding:0 70px;height:72px}
+  nav img{height:40px}
+  header h1{font-size:64px}
+  header p{font-size:18px}
+  section{padding:120px 80px}
+  .grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html"><img src="logo.svg" alt="Nova Tasarım"></a>
+  <div class="nav-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="urunler.html">Ürünlerimiz</a>
+  </div>
+</nav>
+
+<header>
+  <div>
+    <h1>Markanı <span>Görünür</span> Kıl</h1>
+    <p>Minimal. Etkili. Profesyonel dijital tasarımlar.</p>
+  </div>
+</header>
+
+<section>
+  <h2>Neden Nova Tasarım?</h2>
+  <div class="grid" style="margin-top:32px">
+    <div class="card">+30<br>Tamamlanan Proje</div>
+    <div class="card">100%<br>Müşteri Memnuniyeti</div>
+    <div class="card">30 Dakika<br>İçinde Yanıt</div>
+  </div>
+</section>
+
+<section>
+  <h2>Hizmetlerimiz</h2>
+  <div class="grid" style="margin-top:32px">
+    <div class="card">Animasyonlu Logo</div>
+    <div class="card">Logo Tasarımı</div>
+    <div class="card">Reels Tasarımı</div>
+    <div class="card">Sosyal Medya Tasarımları</div>
+  </div>
+</section>
+
+<footer>
+  <img src="logo.svg" alt="Nova Tasarım">
+  <div>📞 0536 561 30 22<br>✉️ recepacn@gmail.com</div>
+</footer>
+
+<a class="whatsapp" target="_blank"
+href="https://wa.me/905365613022?text=Fiyat%20Bilgisi%20Alabilir%20Miyim%3F">💬</a>
+
+</body>
+</html>
