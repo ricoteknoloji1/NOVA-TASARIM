@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Tasarım</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+html{scroll-behavior:smooth;}
+body{font-family:Poppins,sans-serif;margin:0;background:#0d0d0d;color:#fff}
+nav{
+position:fixed;top:0;left:0;right:0;
+background:rgba(0,0,0,.9);
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 25px;z-index:1000
+}
+nav img{height:38px}
+.menu-btn{cursor:pointer;font-size:26px;color:#fff}
+.side-menu{
+position:fixed;top:0;right:-320px;width:320px;height:100%;
+background:#111;padding:100px 30px;transition:.4s;z-index:999
+}
+.side-menu a{
+display:block;margin-bottom:22px;color:#fff;
+text-decoration:none;font-size:18px
+}
+.side-menu.active{right:0}
+
+section{
+padding:140px 20px 80px;
+text-align:center;
+min-height:100vh;
+}
+
+footer{
+text-align:center;
+padding:40px 20px;
+border-top:1px solid rgba(255,255,255,.1)
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:26px;
+text-decoration:none
+}
+</style>
+
+<script>
+function toggleMenu(){
+document.querySelector('.side-menu').classList.toggle('active');
+}
+</script>
+
+</head>
+<body>
+
+<nav>
+<a href="#anasayfa"><img src="logo.svg"></a>
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+</nav>
+
+<div class="side-menu">
+<a href="#anasayfa" onclick="toggleMenu()">Ana Sayfa</a>
+<a href="#urunler" onclick="toggleMenu()">Ürünlerimiz</a>
+<a href="#hakkimizda" onclick="toggleMenu()">Hakkımızda</a>
+<a href="#iletisim" onclick="toggleMenu()">İletişim</a>
+</div>
+
+<section id="anasayfa">
+<h1>Markanı <span style="color:#e10600;">Görünür</span> Kıl</h1>
+<p>Minimal. Etkili. Profesyonel dijital tasarımlar.</p>
+</section>
+
+<section id="neden">
+<h2>Neden Nova Tasarım?</h2>
+<p>+30 Tamamlanan Proje<br>
+100% Müşteri Memnuniyeti<br>
+30 Dakika İçinde Yanıt</p>
+</section>
+
+<section id="urunler">
+<h2>Ürünlerimiz</h2>
+<p>Animasyonlu Logo<br>
+Logo Tasarımı<br>
+Reels Tasarımı<br>
+Sosyal Medya Tasarımları</p>
+</section>
+
+<section id="hakkimizda">
+<h2>Hakkımızda</h2>
+<p>Nova Tasarım olarak markaların dijital dünyada güçlü bir kimlik kazanmasını sağlıyoruz.</p>
+<p>Yaratıcı çözümler ve modern tasarım anlayışıyla profesyonel hizmet sunuyoruz.</p>
+</section>
+
+<section id="iletisim">
+<h2>İletişim</h2>
+<p>📞 0536 561 30 22</p>
+<p>✉️ recepacn@gmail.com</p>
+<p>WhatsApp üzerinden hızlı teklif alabilirsiniz.</p>
+</section>
+
+<footer>
+<img src="logo.svg" height="40"><br><br>
+Nova Tasarım © 2026
+</footer>
+
+<a class="whatsapp" target="_blank"
+href="https://api.whatsapp.com/send?phone=905365613022&text=Fiyat%20Bilgisi%20Alabilir%20Miyim%3F">
+💬
+</a>
+
+</body>
+</html>
